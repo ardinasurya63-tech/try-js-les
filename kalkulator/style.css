@@ -1,0 +1,162 @@
+
+/* PENGATURAN DASAR */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ef;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background-color: #203b60;
+    color: white;
+
+    padding: 15px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h3 {
+    margin: 0;
+}
+
+/* MENU NAVIGASI */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 13px;
+}
+
+/* KONTEN UTAMA */
+main {
+    min-height: 285px;
+    padding: 25px 20px;
+}
+
+/* KOTAK KALKULATOR */
+.container {
+    background-color: white;
+
+    padding: 20px;
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px #ccc;
+
+    max-width: 600px;
+    margin: auto;
+}
+
+.container h2 {
+    color: #203b60;
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.container p {
+    font-size: 14px;
+}
+
+/* IDENTITAS SISWA */
+.identitas {
+    background-color: #f5f7fa;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.identitas p {
+    margin: 5px 0;
+}
+
+/* FORM INPUT */
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    max-width: 300px;
+
+    padding: 9px;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* TOMBOL HITUNG */
+button {
+    display: block;
+
+    margin-top: 12px;
+    padding: 10px 20px;
+
+    background-color: #f03b49;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d52b38;
+}
+
+/* HASIL PERHITUNGAN */
+#hasil {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* FOOTER */
+footer {
+    background-color: #203b60;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+    font-size: 13px;
+}
+
+footer a {
+    color: white;
+}
+
+/* TAMPILAN HP */
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    input {
+        max-width: 100%;
+    }
+}
